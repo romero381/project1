@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Homepage Navigation</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+        .navbar {
+            width: 100%;
+            display: flex;
+            align-items: right;
+            justify-content: space-between;
+            background: #283e4a;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .nav{
+            
+        }
+        .navbar-left, .navbar-right {
+            display: flex;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+        }
+        .navbar a i {
+            font-size: 20px;
+            margin-bottom: 3px;
+        }
+       
+        .navbar-logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-right: 20px;
+        }
+        .search-box {
+            background: rgb(0, 0, 0);
+            padding: 5px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .search-box input {
+            border: none;
+            outline: none;
+            padding: 5px;
+            font-size: 14px;
+        }
+        .search-box i {
+            color: #555;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="navbar-logo">in</div>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+            <a href="#network"><i class="fas fa-user-friends"></i> My Network</a>
+            <a href="#jobs"><i class="fas fa-briefcase"></i> Jobs</a>
+            <a href="#messages"><i class="fas fa-comment-dots"></i> Messaging</a>
+            <a href="#notifications"><i class="fas fa-bell"></i> Notifications</a>
+        </div>
+        <div class="navbar-right">
+            <a href="#profile"><i class="fas fa-user-circle"></i> Me</a>
+            <a href="#work"><i class="fas fa-th"></i> Work</a>
+        </div>
+    </div>
+</body>
+</html>
