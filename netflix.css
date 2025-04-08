@@ -1,114 +1,189 @@
-/* Reset & body */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    background-color: #111;
-    font-family: Arial, sans-serif;
-    color: #fff;
-  }
-  
-  /* Header */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-    background: rgba(0, 0, 0, 0.6);
-  }
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: red;
-  }
-  .nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-  }
-  .profile img {
-    width: 32px;
-    border-radius: 4px;
-  }
-  
+.footer-text{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-color: #141414;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.navbar .logo img {
+  width: 120px;
+}
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navbar .nav-links li {
+  margin: 0 15px;
+}
+.navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.navbar .nav-links a:hover {
+  color: #e50914;
+}
+.navbar .profile {
+  display: flex;
+  align-items: center;
+}
+.navbar .profile a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+.navbar .profile a:hover {
+  color: #e50914;
+}
+.navbar .profile img {
+  width: 35px;
+  border-radius: 5px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.img{
+  position: relative;
+  top: 110px; 
+  left: 400px; 
+}
+.h1{
+  color: rgb(253, 253, 253);
+  position: relative;
+  bottom: 400px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+.para{
+  color: rgb(255, 255, 255);
+  text-align: left;
+  width: 20%;
+  margin-left: 5px;
+  position: relative;
+  bottom: 350px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.netflix-button-container {
+  display: flex;
+  gap: 10px;
+}
 
-  .hero {
-    height: 90vh;
-    background-image: url('https://occ-0-33-1001.1.nflxso.net/art/8c8c7/4210e318f5f2968e1f6b1b5b7e9b8c8c7f3dbbd2.jpg');
-    background-size: cover;           
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    padding-left: 40px;
-    position: relative;
-  }
-  .hero::after {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: linear-gradient(to top, #111 10%, transparent 90%);
-    z-index: 0;
-  }
-  .hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 600px;
-  }
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  .hero-buttons .btn {
-    padding: 10px 20px;
-    margin-right: 10px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  .btn.play {
-    background-color: #fff;
-    color: #000;
-  }
-  .btn.info {
-    background-color: rgba(109, 109, 110, 0.7);
-    color: #fff;
-  }
-    .row {
-    margin-top: 20px;
-    padding: 20px;
-  }
-  .row h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  .row-posters {
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
-  }
-  .row-posters img {
-    width: 150px;
-    height: 225px;
-    object-fit: cover;
-    transition: transform 0.3s;
-    border-radius: 5px;
-  }
-  .row-posters img:hover {
-    transform: scale(1.1);
-  }
-  .aa{
-    display: flex;
-  }
+.netflix-button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  position: relative;
+  bottom: 200px;
+  left: 30px;
+}
+
+.netflix-button:hover {
+  background-color: #ffffff;
+}
+
+.netflix-button:active {
+  background-color: #ffffff;
+}
+.netflix-button2{
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+position: relative;
+bottom: 200px;
+left: 40px;
+border-radius: 5px;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.trending-container {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.trending-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.trending-row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.trending-row img {
+  width: 150px;
+  height: 220px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.trending-row img:hover {
+  transform: scale(1.1);
+}
+
+
+.trending-row::-webkit-scrollbar {
+  height: 5px;
+}
+
+.trending-row::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 10px;
+}
+
+.trending-row::-webkit-scrollbar-track {
+  background: #222;
+}
+.netflix-footer {
+  background: #111;
+  color: #757575;
+  padding: 40px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+}
+.footer-text {
+  margin-bottom: 20px;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-link {
+  color: #757575;
+  text-decoration: underline;
+}
